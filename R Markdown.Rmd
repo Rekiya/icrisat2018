@@ -1,0 +1,62 @@
+---
+title: "My first R markdown"
+author: "Rekiya"
+date: "6 Disamba, 2018"
+output: html_document
+---
+# You can combine text file and R code files- microsoft and excel files
+#introduction
+This is my introduction
+
+##Background
+This is the background of the study
+
+### Dataset
+### creating ordered list
+1. data1
+1. data2
+1. data3
+
+
+#creating unordered list
++ data1
++ data2
++ data3
+
+# For scientific names in italics and ** for bold italics
+
+*Scientific name*
+
+**Scientific name**
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r explore_data}
+data(iris)
+head(iris)
+```
+# Before you include your code, use ```{r if it is r code}
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE, fig.height=10, fig.width=5}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
